@@ -1,0 +1,39 @@
+#countDownTimer {
+    font-weight: bold;
+    font-size: xx-large;
+    color: red;
+}
+
+body {
+    background: linear-gradient(270deg, red, rebeccapurple);
+    color: yellow;
+}
+
+#loginTitleStyle {
+    color: teal;
+}
+
+.blinking {
+
+    animation: opacity 4s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="code.js"></script>
+    <script src="class.js"></script>
+    <script src="dataLoader.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+        //creating global varibles for webpage
+        var theTime = new Date();
+        var tempTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+
+        //gets data into array
+        var data = getData();
+
+    </script>
+    <title>
+        Prof. Prater's CSC102 page
+    </title>
+    <script>var matt = "cool";</script>
+</head>
+
+<body>
+    <table>
+        <td><img src="btrUATspaceLogo.png"></td>
+        <td>
+            <h1>UAT Space Program</h1>
+        </td>
+    </table>
+    <table id="data" width="70%" border="2">
+        <thead>
+            <th>Data type</th>
+            <th>Reading</th>
+        </thead>
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="latitude"></tr>
+            <tr id="longitude"></tr>
+            <tr id="gps_altitude"></tr>
+            <tr id="bmpSensor_altitude"></tr>
+            <tr id="bmpSensor_pressure"></tr>
+            <tr id="bmpSensor_temp"></tr>
+            <tr id="digSensor_temp"></tr>
+            <tr id="cssSensor_temp"></tr>
+            <tr id="cssSensor_eCO2"></tr>
+            <tr id="cssSensor_TVOC"></tr>
+            <tr id="UV"></tr>
+            <tr id="accelX"></tr>
+            <tr id="accelY"></tr>
+            <tr id="accelZ"></tr>
+            <tr id="magneticX"></tr>
+            <tr id="magneticY"></tr>
+            <tr id="magneticZ"></tr>
+            <tr id="gyroX"></tr>
+            <tr id="gyroY"></tr>
+            <tr id="gyroZ"></tr>
+        </tbody>
+    </table>
+    <p id="clockTime">Displays time when running</p>
+    <br>
+    <button id="startButton" class="button" onclick="start();">Start</button>
+    <button id="stopButton" class="button" onclick="stop();">Stop</button> <br>
+    <br>
+    <p id="countDownTimer">Waiting to start...</p>
+    <br>
+    <br>
+    <button onclick="playCraps();">Play Craps!</button>
+    <p id="die1Res">Die 1...</p>
+    <p id="die2Res">Die 2...</p>
+    <p id="sum1Res">Sum...</p>
+    <p id="finalRes">Win, lose or draw...</p>
+    <br>
+    <br>
+    <script>
+        var fallLaunch = new Mission(75, 100, 25, "Fiona", 31, "October", 2021, 5);
+        var springLaunch = new Mission(25, 50, 5, "Polaris", 12, "April", 2022, 3);
+    </script>
+    <button class="button" onclick="launchFall();">Launch Fall Mission</button>
+    <button class="button" onclick="displayFall();">Display Fall Mission</button><br>
+    <button class="lgButton" onclick="launchSpring();">Launch Spring Mission</button>
+    <button class="lgButton" onclick="displaySpring();">Display Spring Mission</button><br>
+    <br>
+    <button class="lgButton" onclick="playStation();">Play SpaceStation Sounds</button><br>
+    <button class="lgButton" onclick="playBowie();">Play David Bowie</button><br>
+    <button onclick="dictDataStruct();">Data</button>
+
+
+</body>
+
+</html>
